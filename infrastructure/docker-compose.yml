@@ -6,24 +6,21 @@ services:
       - "80:80"
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./html/index.html:/etc/nginx/html/index.html:ro
+      - ./html/Logo-Exxcellent-RGB-300.png:/etc/nginx/html/Logo-Exxcellent-RGB-300.png:ro
+      - ./html/style.css:/etc/nginx/html/style.css:ro
     container_name: proxy
     hostname: proxy
     command: nginx -g "daemon off;"
   fundamentals:
-    build:
-      context: ../fundmentals-lib-react-sample-app
-      dockerfile: Dockerfile
+    image: docker-registry.paul-blaesi.de/fundamentals:latest
     container_name: fundamentals
     hostname: fundamentals
   ui5:
-    build:
-      context: ../sapui5-sample-app
-      dockerfile: Dockerfile
+    image: docker-registry.paul-blaesi.de/ui5:latest
     container_name: ui5
     hostname: ui5
   webcomponents:
-    build:
-      context: ../ui5-webcomponents-for-react-sample-app
-      dockerfile: Dockerfile
+    image: docker-registry.paul-blaesi.de/webcomponents:latest
     container_name: webcomponents
     hostname: webcomponents

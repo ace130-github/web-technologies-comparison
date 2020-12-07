@@ -3,7 +3,7 @@
 	"sap.app": {
 		"id": "sap.ui.demo.todo",
 		"type": "application",
-		"title": "SAPUI5 Sample Application",
+		"title": "Sample Application - Alternative 2",
 		"applicationVersion": {
 			"version": "1.0.0"
 		}

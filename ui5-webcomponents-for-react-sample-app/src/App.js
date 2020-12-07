@@ -121,8 +121,8 @@ function App() {
   return (
     (
       <ThemeProvider>
-        <ShellBar primaryTitle="UI5 Web Components for React Sample Application"
-          logo={<img alt="SAP" height="32px" src="/logo.png" />}> </ShellBar>
+        <ShellBar primaryTitle="Sample Application - Alternative 3"
+          logo={<img alt="SAP" height="32px" src="Drei.png" />}> </ShellBar>
         <section className="app-content">
           <div className="create-todo-wrapper">
             <Input placeholder="My Todo ..." onSubmit={handleAdd} ref={todoInput} className="add-todo-element-width" id="add-input"></Input>

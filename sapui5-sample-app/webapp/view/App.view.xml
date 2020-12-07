@@ -1,11 +1,11 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m"
-	xmlns:f="sap.f" 
+	xmlns:f="sap.f"
 	controllerName="sap.ui.demo.todo.controller.App" displayBlock="true">
 	<App>
 		<Page >
 			<customHeader>
-				<f:ShellBar title="{i18n>TITLE}" homeIcon="./img/logo_ui5.png" />
+				<f:ShellBar title="{i18n>TITLE}" homeIcon="./img/Zwei.png" />
 			</customHeader>
 			<content>
 				<HBox class="create-todo-wrapper">

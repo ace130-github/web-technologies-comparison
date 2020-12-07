@@ -151,8 +151,8 @@ function App() {
   return (
     <div className="app">
       <Shellbar
-        logo={<img alt="SAP" height="32px" src="/logo.png" />}
-        productTitle="Fundamental Library for React Sample Application" />
+        logo={<img alt="SAP" height="32px" src="Eins.png" />}
+        productTitle="Sample Application - Alternative 1" />
       <section className="app-content">
         <div className="create-todo-wrapper">
           <FormInput placeholder="My Todo ..." ref={todoInput} className="add-todo-element-width" id="add-input" />
